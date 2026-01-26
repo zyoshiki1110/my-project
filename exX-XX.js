@@ -4,6 +4,9 @@ window.onload = function() {
     const title = document.getElementById('main-title');
     const statusMsg = document.getElementById('status-msg');
 
+    if (img) {
+        img.src = "xxx.png"; }
+
     if (btn) {
         btn.addEventListener('click', function() {
             document.body.classList.add('inverted');
