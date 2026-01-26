@@ -4,7 +4,7 @@ body {background-color: white;color: black;text-align: center;
       overflow: hidden;}
 
 
-#scary-image {width: 200px;height: auto;margin-top: 30px;}
+#scary-image {width: 200px;height: auto;}
 
 .inverted {filter: invert(100%);background-color: black;}
 
@@ -13,4 +13,4 @@ body {background-color: white;color: black;text-align: center;
              width: 100vw !important;
              height: 100vh !important;
              object-fit: cover;
-             z-index: 9999;}
+             }
