@@ -4,7 +4,7 @@ const title = document.getElementById('main-title');
 const statusMsg = document.getElementById('status-msg');
 
 btn.addEventListener('click', function() {document.body.classList.add('inverted');btn.style.display = 'none';statusMsg.innerText = "ファイルをダウンロード中...";
-setTimeout(function() {img.src = "https://via.placeholder.com/800x600/ff0000/ffffff?text=ESCAPE+IMPOSSIBLE";
+setTimeout(function() {img.src = "xxx.png";
         
     
         img.classList.add('scary-size');
