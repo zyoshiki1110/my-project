@@ -16,9 +16,9 @@ btn.addEventListener('click', function() {
         img.classList.add('scary-size');
         
         title.innerText = "やばいかも";
-        statusMsg.innerText = "あなたは「それ」を見てしまいましたね。";
+        statusMsg.innerText = "開いてしまいましたね。";
 
-        alert("警告：システムが破壊されました");
+        alert("⚠️警告⚠️：システムが破壊されました");
 
     }, 2000);
 });
