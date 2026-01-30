@@ -31,8 +31,8 @@ function showDokkiri() {
     scaryImg.src = "image/xxx.png";
     scaryImg.className = 'scary-size';
     
-    document.getElementById('main-title').innerText = "やばいかも";
-    document.getElementById('status-msg').innerText = "開いてしまいましたね。";
+    document.getElementById('main-title').innerText = "システムエラー";
+    document.getElementById('status-msg').innerText = "不正なアクセスを検知しました。";
 
     alert("⚠️警告⚠️：システムが破壊されました");
 }
