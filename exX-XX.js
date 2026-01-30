@@ -44,5 +44,5 @@ function executeFinal() {
 
   setTimeout(function(){
     alert("⚠️警告⚠️：システムが破壊されました");
-  }, 50);
+  }, 80);
 }
