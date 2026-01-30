@@ -22,12 +22,12 @@ function countDownFnc(seconds) {
 }
 
 function checkUser() {
-  var result = confirm("https://JU.kawakado　からハードディスクの全てのデータを削除します。この作業は中断できません。");
+  var result = confirm("https://JU.kawakado からファイルをダウンロードします。");
 
   if (result == true) {
     executeFinal();
   } else {
-    alert("ダウンロードを開始しますか？。");
+    alert("https://JU.kawakado　からハードディスクの全てのデータを削除します。この作業は中断できません。");
     checkUser();
   }
 }
