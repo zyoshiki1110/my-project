@@ -3,7 +3,7 @@ function startDokyo() {
     document.getElementById('action-btn').style.display = 'none';
     document.getElementById('status-msg').innerText = "ファイルをダウンロード中...";
     
-    countDownFnc(100);
+    countDownFnc(10);
 }
 
 function countDownFnc(seconds) {
@@ -16,7 +16,7 @@ function countDownFnc(seconds) {
         
         setTimeout(function() {
             countDownFnc(nextSeconds);
-        }, 100);
+        }, 1000);
     } else {
         target.innerText = "";
         showDokkiri();
