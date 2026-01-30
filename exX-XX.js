@@ -1,4 +1,6 @@
 function startDokyo() {
+  var btn = document.getElementById('action-btn');
+  btn.innerText = "OK"
   document.getElementById('action-btn').style.display = 'none';
   document.getElementById('status-msg').innerText = "ファイルダウンロード中...";
   countDownFnc(10);
