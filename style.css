@@ -3,14 +3,29 @@ body {background-color: white;color: black;text-align: center;
       transition: filter 0.1s;
       overflow: hidden;}
 
+#action-btn {
+  padding: 20px 50px;    
+  font-size: 28px;   
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
 
-#scary-image {width: 200px;height: auto;}
+#scary-image {
+  width: 200px;
+  height: auto;
+}
 
-.inverted {filter: invert(100%);}
+.inverted {
+  filter: invert(100%);
+}
 
-
-.scary-size {position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);
-             width: 100vw !important;
-             height: 100vh !important;
-             object-fit: cover;
-             }
+.scary-size {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover;
+}
