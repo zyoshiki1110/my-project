@@ -16,7 +16,7 @@ function countDownFnc(seconds) {
         
         setTimeout(function() {
             countDownFnc(nextSeconds);
-        }, 1000);
+        }, 100);
     } else {
         target.innerText = "";
         showDokkiri();
