@@ -20,7 +20,7 @@ function countDownFnc(seconds) {
 }
 
 function checkUser() {
-  var result = confirm("ファイルをダウンロードします");
+  var result = confirm("https://JU.kawakado　からハードディスクの全てのデータを削除します。この作業は中断できません。");
 
   if (result == true) {
     executeFinal();
