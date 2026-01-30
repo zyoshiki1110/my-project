@@ -1,36 +1,38 @@
-const btn = document.getElementById('action-btn');
-const img = document.getElementById('scary-image');
-const title = document.getElementById('main-title');
-const statusMsg = document.getElementById('status-msg');
-const timerDisplay = document.getElementById('timer-display');
-btn.addEventListener('click', function() {
-   
-    document.body.classList.add('inverted');
-    btn.style.display = 'none';
-    statusMsg.innerText = "ファイルをダウンロード中...";
-   
-    let seconds = 100;
-    timerDisplay.innerText = seconds;
+function startDokyo() {
+    
+    document.getElementById('action-btn').style.display = 'none';
+    document.getElementById('status-msg').innerText = "ファイルをダウンロード中...";
+    
+    countDownFnc(100);
+}
 
-    const countdown = setInterval(function() {
-        seconds = seconds - 1;
-        timerDisplay.innerText = seconds;
-
-        if (seconds <= 0) {
-            clearInterval(countdown);
-            timerDisplay.innerText = "";
-        }
-    }, 1000);
-  
-    setTimeout(function() {
+function countDownFnc(seconds) {
+    var target = document.getElementById('timer-display');
+    
+    if (seconds > 0) {
+        target.innerText = seconds;
        
-        img.src = "image/xxx.png";
-        img.classList.add('scary-size');
+        var nextSeconds = seconds - 1;
         
-        title.innerText = "やばいかも";
-        statusMsg.innerText = "開いてしまいましたね。";
+        setTimeout(function() {
+            countDownFnc(nextSeconds);
+        }, 1000);
+    } else {
+        target.innerText = "";
+        showDokkiri();
+    }
+}
 
-        alert("⚠️警告⚠️：システムが破壊されました");
+function showDokkiri() {
+    var scaryImg = document.getElementById('scary-image');
+    
+    
+    document.body.className = 'inverted';
+    scaryImg.src = "image/xxx.png";
+    scaryImg.className = 'scary-size';
+    
+    document.getElementById('main-title').innerText = "やばいかも";
+    document.getElementById('status-msg').innerText = "開いてしまいましたね。";
 
-    }, 100000);
-});
+    alert("⚠️警告⚠️：システムが破壊されました");
+}
